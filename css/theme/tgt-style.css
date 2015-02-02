@@ -1,31 +1,239 @@
 .no-bullet > li {
 	list-style-type: none;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	font-size: 24px;
 }
 
+.reveal p.p-light {
+	font-size: 18px;
+	line-height: 22px;
+}
+
+section > p {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 200;
+}
+
+section p.center-50 {
+	width: 50%;
+	margin: 0 auto;
+}
+
+section p.center-75 {
+	width: 75%;
+	margin: 0 auto;
+}
+
+section p.p-small {
+	font-size: 16px;
+	line-height: 20px;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+
 .reveal a:not(.image) {
-	color: #333;
-	background: rgba(255,255,255,.2);
+	color: rgba(255,255,255,.8);
+	background: rgba(255,255,255,0);
 	padding: 1px 10px;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0);
 	text-decoration: none;
-	-webkit-transition: background .5s ease;
-	-moz-transition: background .5s ease;
-	-ms-transition: background .5s ease;
-	-o-transition: background .5s ease;
-	transition: background .5s ease; 
-	border-radius: 8px;
+	-webkit-transition: color .5s ease;
+	-moz-transition: color .5s ease;
+	-ms-transition: color .5s ease;
+	-o-transition: color .5s ease;
+	transition: color .5s ease;
+	border-radius: 0px;
+	font-weight: 200;
+	font-size: 28px;
+}
+
+.reveal a.white:not(.image) {
+	color: rgba(255,255,255,.8);
 }
 
 .reveal a:not(.image):hover {
-	color: #333;
-	background: rgba(255,255,255,.2);
+	color: rgba(255,255,255,1);
+	background: rgba(255,255,255,0);
 	padding: 1px 10px;
 	text-shadow: 1px 1px 1px #333;
 	text-decoration: none;
-	box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+	box-shadow: 0px 0px 5px rgba(0,0,0,0);
 	text-shadow: 1px 1px 1px rgba(0,0,0,0);
 }
 
 .reveal ul li {
 	margin-top: 8px;
 }
+
+li.tab {
+	padding-left: 50px;
+	font-size: 26px;
+}
+
+img.screenshot {
+	width: 800px;
+	height: auto;
+	border: 0px solid rgba(0,0,0,0);
+	border-radius: 8px;
+	box-shadow: 1px 1px 5px #333;
+	background: none;
+}
+
+img.screenshot-white {
+	width: 800px;
+	height: auto;
+	border: 0px solid rgba(0,0,0,0);
+	border-radius: 8px;
+	box-shadow: none;
+	background: white;
+}
+
+
+img.screenshot-box {
+	max-width: 600px;
+	height: auto;
+	border: none;
+	border-radius: 8px;
+	box-shadow: none;
+	background: white !important;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+ul.list-small li {
+	font-size: 22px;
+}
+
+span.terminal {
+	background: #333;
+	color: lime;
+	font-family: monospace;
+	font-size: 24px;
+	padding: 5px 20px 2px 20px;
+	line-height: 34px;
+	border-radius: 4px;
+	-moz-box-shadow:    inset 0 0 10px #000000;
+	-webkit-box-shadow: inset 0 0 10px #000000;
+	box-shadow:         inset 0 0 10px #000000;
+}
+
+span.terminal-warning {
+	background: white;
+	color: red;
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 24px;
+	padding: 5px 20px 2px 20px;
+	line-height: 34px;
+	border-radius: 4px;
+	-moz-box-shadow:    inset 0 0 10px black;
+	-webkit-box-shadow: inset 0 0 10px black;
+	box-shadow:         inset 0 0 10px black;
+	height: 30px;
+	border: 1px dashed red;
+}
+
+.terminal-red {
+	background: #333;
+	font-family: monospace;
+	padding: 5px 20px 2px 20px;
+	line-height: 34px;
+	border-radius: 4px;
+	-moz-box-shadow:    inset 0 0 10px #000000;
+	-webkit-box-shadow: inset 0 0 10px #000000;
+	box-shadow:         inset 0 0 10px #000000;
+	color: red;
+	font-size: 20px;
+}
+
+i.ion-checkmark {color: #1AC22C;}
+.reveal i.fa { font-family:FontAwesome; font-style: normal; }
+.reveal a.wiki {
+	background: black;
+	background: rgba(0,0,0,.7);
+	color: red;
+	box-shadow: none;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	border-radius: 8px;
+}
+
+.reveal a.wiki:hover {
+	background: rgba(0,0,0,.9);
+	color: red;
+	box-shadow: 0px 0px 2px red;
+	border-radius: 0px;
+}
+
+.reveal a.wiki-white {
+	background: white;
+	background: rgba(0,0,0,.7);
+	color: orange	;
+	box-shadow: none;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	border-radius: 0px;
+}
+
+.reveal a.wiki-white:hover {
+	background: rgba(255,255,255,1);
+	color: #333;
+}
+
+span.language {
+	background: rgba(255,255,255,0);
+	color: rgba(255,255,255,1);
+	text-shadow: 0px 0px 1px black;
+	font-weight: 500;
+	border-radius: 8px;
+}
+
+.fa-rotate {transform: rotate(90deg); color: rgba(255,255,255,.2);}
+.fa-green {color: lime;}
+.fa-red {color: rgba(204,0,0,1);}
+.fa-yellow {color: yellow;}
+.i-small {font-size: 12px;}
+.fa-white {color: rgba(255,255,255,1);}
+
+.logo-wiki {width: 300px; height: auto; border: none; box-shadow: none;}
+
+ul.small-links > li  {
+	margin: 0;
+	font-size: 20px;
+}
+
+.col-sm-6 > .small-links > li > a {
+	font-size: 20px;
+}
+
+
+li.list-item-copy {
+	font-size: 20px;
+	text-align: center;
+}
+
+a.light-blue {
+	color: lightBlue;
+}
+
+
+.text-coral {color: #E7473C;}
+.text-light-blue {color: #3498DB;}
+.text-frost {color: #ECF0F1;}
+.text-teal {color: #35FF99;}
+.text-orange {color: orange;}
+.text-red {color: rgba(204,0,0,1);}
+.text-red-bold {color: rgba(204,0,0,1); font-weight: 500;}
+.text-blue-2 {color: rgba(49,199,235,1);}
+.text-lime {color: lime;}
