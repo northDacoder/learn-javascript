@@ -160,22 +160,26 @@
                 </section>
 
                 <section>
-                    <p>Enough about the history, let's build something</p>
+                    <h2>Enough about the history, let's build something!</h2>
                 </section>
 
 
                 <section>
+                    <h2>Step 1</h2><br>
                     <p>In your text-editor of choice, create an index.html file & add the following code:</p><br>
                     <a href="https://gist.github.com/anonymous/7aca1bee8e8bf574915d" target="_blank"><button class="btn btn-info btn-lg"><i class="fa fa-github"></i> github gist template</button></a>
                 </section>
 
                 <section>
+                    <h2>Step 2</h2><br>
                     <p>Download the javascript & css files & include them in your project or copy & paste the links to their hosted files & add them to the head of your html file</p><br>
                     <i class="fa fa-level-up fa-rotate fa-white"></i> <a href="http://getbootstrap.com/getting-started/#download" target="_blank"><button type="button" class="btn btn-success btn-lg">Download Bootstrap <i class="fa fa-twitter"></i></button></a>
                 </section>
 
                 <section>
-                    <p>If you prefer to load the files from their hosted <a href="http://www.webopedia.com/TERM/C/CDN.html" target="_blank">CDN</a>, add the following code to the head section of your html page</p><br>
+                    <h2>Step 2 (other option)</h2><br>
+                    <p>Load the files directly from the boostrap <a href="http://www.webopedia.com/TERM/C/CDN.html" target="_blank"><button class="btn btn-success btn-lg"><i class="fa fa-link"></i> CDN</button></a></p><br>
+
                     <pre><code data-trim contenteditable>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -187,6 +191,157 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
                 </code></pre>
                 </section>
+
+                <section>
+                    <h3>Let's add some icons</h3><br>
+                    <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank"><img src="img/font-awesome.png" class="screenshot-box"></a
+                    <p>Font awesome is an open source icon set that gives you scalable vector icons that can be used any way you'd like.  The size
+                        color can be changed easily with css</p>
+                </section>
+
+                <section>
+                    <h3>How to use Font Awesome</h3><br>
+<ul class="no-bullet">
+    <li><strong>Option 1:</strong> Download the Font-awesome 4.3 css file & load it into the head of your index.html page</li>
+</ul>
+<pre><code data-trim contenteditable>
+<!-- option 1 -->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+</code></pre>
+<ul class="no-bullet">
+    <li><strong>Option 2:</strong> Link directly to the font awesome CDN file in the head of your index.html page</li>
+</ul>
+<pre><code data-trim contenteditable>
+<!-- option 2 -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</code></pre>
+                </section>
+
+                <section>
+                    <h3>Bootstrap Scaffolding</h3><br>
+                    <p><i class="fa fa-star"></i> Requires 3 elements <i class="fa fa-star"></i></p>
+                    <br>
+                    <p>container</p>
+                    <pre><code><div class="container"></div></code></pre>
+
+                    <p>row</p>
+                    <pre><code><div class="row"></div></code></pre>
+
+                    <p>column</p>
+                    <pre><code><div class="col-*-*"></div></code></pre>
+
+                </section>
+
+
+                <section>
+                    <h3>Bootstrap Scaffolding</h3><br>
+                    <p>Always start with the "container" or "container-fluid" element as the first element inside the body tags</p>
+<pre><code data-trim contenteditable>
+<!-- Container for 1024px wrapper that has padding on both sides -->
+<div class="container">
+
+</div>
+</code></pre>
+<pre><code data-trim contenteditable>
+<!-- Container-fluid for full-width page wrapper -->
+<div class="container-fluid">
+
+</div>
+</code></pre>
+            </section>
+
+            <section>
+                <h3>Bootstrap Scaffolding</h3><br>
+                <p>Directly inside the container, you can add a div with a "row" class</p>
+<pre><code data-trim contenteditable>
+<!-- Container for 1024px wrapper that has padding on both sides -->
+<div class="container">
+    <div class="row">
+
+    </div>
+</div>
+</code></pre>
+<pre><code data-trim contenteditable>
+<!-- Container-fluid for full-width page wrapper -->
+<div class="container-fluid">
+    <div class="row">
+
+    </div>
+</div>
+</code></pre>
+            </section>
+
+
+            <section>
+                <h3>Bootstrap Scaffolding</h3><br>
+                <p>Now that you have a "row", you can nest columns, then rows, then columns, & so on & so forth</p>
+<pre><code data-trim contenteditable>
+<!-- Container for 1024px wrapper that has padding on both sides -->
+<div class="container">
+    <div class="row">
+        <div class="col-*-*"></div>
+    </div>
+</div>
+</code></pre>
+<pre><code data-trim contenteditable>
+<!-- Container-fluid for full-width page wrapper -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-*-*"></div>
+    </div>
+</div>
+</code></pre>
+            </section>
+
+
+            <section>
+                <h3><i class="fa fa-book"></i> The Bootstrap Rule Book</h3>
+                <ul class="no-bullet">
+                    <li><i class="fa fa-check fa-green"></i> Only columns can be immediate children of rows</li>
+                    <li><i class="fa fa-check fa-green"></i> Columns create spacing gutters via padding</li>
+                    <li><i class="fa fa-check fa-green"></i> Each columns needs to elements: size & number</li>
+                    <li class="tab">"col-<strong>md</strong>-6"</li>
+                    <li class="tab">"col-md-<strong>6</strong>"</li>
+                    <li><i class="fa fa-check fa-green"></i> There are 12 available spaces in every row</li>
+                    <li class="tab"><i class="fa fa-level-up fa-rotate fa-white"></i> To fill an entire row, the column numbers need to add up to 12</li>
+                </ul>
+
+                <p>If more than 12 columns are placed within a single row, the extra columns will wrap & start a new row on a new line</p>
+
+            </section>
+
+
+            <section>
+<p>3 equal blocks horizontally on the screen</p><br>
+<pre><code data-trim contenteditable>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+    </div>
+</div>
+</code></pre>
+<img src="img/threecolumns.png" style="border: none; border-radius: 8px; padding: 20px;">
+            </section>
+
+            <section>
+                <h3>Column Sizes</h3>
+                <p>There are 4 different size options you can give to columns to make them responsive on different screen sizes</p>
+                <ul class="no-bullet">
+                    <li>xs - extra small devices</li>
+                    <li class="tab"><i class="fa fa-level-up fa-rotate fa-green"></i> < 768px</li>
+                    <li>sm - small devices </li>
+                    <li class="tab"><i class="fa fa-level-up fa-rotate fa-green"></i> >= 768px</li>
+                    <li>md</li>
+                    <li class="tab"><i class="fa fa-level-up fa-rotate fa-green"></i> >= 992px</li>
+                    <li>lg</li>
+                </ul>
+
+            </section>
+
+
+
 
 
             </div>
