@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Learn Twitter Bootstrap</title>
+
+        <meta name="description" content="">
+        <meta name="author" content="John Ryan">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Glegoo:400,700|Droid+Sans:400,700|Quicksand|Josefin+Sans:100,300,400|Life+Savers:400,700|Source+Code+Pro:200,300,400,700,900|Open+Sans:400,300|Roboto+Slab:400,300|Merriweather+Sans:400,300|Gruppo|Roboto:400,900|Raleway:400,700|Montserrat:400,700|Oxygen:400,700,300|Maven+Pro:400,900|Orbitron:400,900|Sancreek' rel='stylesheet' type='text/css'>
+
+        <!-- Bootstrap CSS styles -->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="css/theme/moon.css" id="theme">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Custom TGT Styles -->
+        <link rel="stylesheet" href="css/theme/tgt-moon.css" id="theme">
+        <link rel="stylesheet" href="css/theme/tgt-style.css">
+
+
+        <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+        <script>
+            if( window.location.search.match( /print-pdf/gi ) ) {
+                var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+        </script>
+
+        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+
+        <style type="text/css">
+            body {
+                position: relative;
+                padding: 40px 0;
+                color: #fff;
+                text-align: center;
+                text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+                background: #020031; /* Old browsers */
+                background: -moz-linear-gradient(45deg,  #020031 0%, #6d3353 100%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#020031), color-stop(100%,#6d3353)); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(45deg,  #020031 0%,#6d3353 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(45deg,  #020031 0%,#6d3353 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(45deg,  #020031 0%,#6d3353 100%); /* IE10+ */
+                background: linear-gradient(45deg,  #020031 0%,#6d3353 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020031', endColorstr='#6d3353',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+                -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+                -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+                box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="reveal">
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section>
+                    <img src="css/target-white.png" height="200" width="200" style="background: none; border: none; box-shadow: none;">
+                    <h3 class="lower">Twitter Bootstrap</h3>
+                    <p><span class="label label-success" style="padding: 7px 10px; border-radius: 0;box-shadow: 1px 1px 3px #333;">John Ryan</span> <a href="mailto:john.c.ryan2@target.com">John.C.Ryan2@Target.com</a></p>
+                </section>
+
+                <section>
+                    <p>In your text-editor of choice, create an index.html file & add the following code:</p><br>
+                    <a href="https://gist.github.com/anonymous/7aca1bee8e8bf574915d" target="_blank"><button class="btn btn-info btn-lg"><i class="fa fa-github"></i> github gist template</button></a>
+                </section>
+
+                <section>
+                    <p>Download the javascript & css files & include them in your project or copy & paste the links to their hosted files & add them to the head of your html file</p><br>
+                    <i class="fa fa-level-up fa-rotate fa-white"></i> <a href="http://getbootstrap.com/getting-started/#download" target="_blank"><button type="button" class="btn btn-success btn-lg">Download Bootstrap <i class="fa fa-twitter"></i></button></a>
+                </section>
+
+                <section>
+                    <p>If you prefer to load the files from their hosted <a href="http://www.webopedia.com/TERM/C/CDN.html" target="_blank">CDN</a>, add the following code to the head section of your html page</p><br>
+                    <pre><code data-trim contenteditable>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+                </code></pre>
+                </section>
+            </div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Parallax scrolling
+                // parallaxBackgroundImage: 'img/blur-city.jpg',
+                // parallaxBackgroundImage: 'img/slate-bg.png',
+                // parallaxBackgroundImage: 'img/slate-bg.png',
+                // parallaxBackgroundSize: '1400px auto',
+                // parallaxBackgroundSize: '200px 200px',
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
